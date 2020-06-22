@@ -1,4 +1,4 @@
-package com.test.tvprogramepg.api.fragments.channels
+package com.test.tvprogramepg.fragments.channels
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import com.test.tvprogramepg.DataHolder
-import com.test.tvprogramepg.api.adapter.TVAdapter
+import com.test.tvprogramepg.adapter.TVAdapter
 import com.test.tvprogramepg.databinding.ChannelsFragmentBinding
 
 class ChannelsFragment : Fragment() {

@@ -1,4 +1,4 @@
-package com.test.tvprogramepg.api.fragments.settings
+package com.test.tvprogramepg.fragments.settings
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.test.tvprogramepg.R
-import com.test.tvprogramepg.Router
 import com.test.tvprogramepg.databinding.SettingsFragmentBinding
 
 class SettingsFragment : Fragment() {

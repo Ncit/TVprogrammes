@@ -1,4 +1,4 @@
-package com.test.tvprogramepg.api.adapter
+package com.test.tvprogramepg.adapter
 
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide

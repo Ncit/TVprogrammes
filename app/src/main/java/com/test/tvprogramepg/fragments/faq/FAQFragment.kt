@@ -1,4 +1,4 @@
-package com.test.tvprogramepg.api.fragments.faq
+package com.test.tvprogramepg.fragments.faq
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.test.tvprogramepg.R
-import com.test.tvprogramepg.api.fragments.faq.adapter.ExpandableListAdapter
+import com.test.tvprogramepg.fragments.faq.adapter.ExpandableListAdapter
 import com.test.tvprogramepg.databinding.FAQFragmentBinding
 
 

@@ -1,7 +1,6 @@
-package com.test.tvprogramepg.api.adapter
+package com.test.tvprogramepg.adapter
 
 import androidx.paging.PageKeyedDataSource
-import com.test.tvprogramepg.DataHolder
 import com.test.tvprogramepg.api.TVApi
 import com.test.tvprogramepg.api.models.ChannelModel
 import com.test.tvprogramepg.api.models.TvModel
@@ -11,7 +10,7 @@ import retrofit2.Response
 
 class ChannelsDataSource : PageKeyedDataSource<Long, ChannelModel>() {
 
-    private val pageSize: Long = 5
+    private val pageSize: Long = 8
 
     private var dataService: TVApi = TVApi.getService()
 
@@ -25,8 +24,6 @@ class ChannelsDataSource : PageKeyedDataSource<Long, ChannelModel>() {
         call?.enqueue(object : Callback<TvModel> {
             override fun onResponse(call: Call<TvModel>, response: Response<TvModel>) {
                 if (response.isSuccessful) {
-                    val body = response.body()
-//                    DataHolder.programmes?.addAll(body?.programmes ?: arrayListOf())
                     callback.onResult(response.body()?.channels ?: listOf(), null, pageSize)
                     loadListener?.invoke()
                 }
@@ -43,8 +40,6 @@ class ChannelsDataSource : PageKeyedDataSource<Long, ChannelModel>() {
             override fun onResponse(call: Call<TvModel>, response: Response<TvModel>) {
                 if (response.isSuccessful) {
                     loadListener?.invoke()
-                    val body = response.body()
-//                    DataHolder.programmes?.addAll(body?.programmes ?: arrayListOf())
                     callback.onResult(response.body()?.channels  ?: listOf(), params.key + pageSize)
                 }
             }

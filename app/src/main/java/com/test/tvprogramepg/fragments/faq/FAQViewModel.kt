@@ -1,4 +1,4 @@
-package com.test.tvprogramepg.api.fragments.faq
+package com.test.tvprogramepg.fragments.faq
 
 import androidx.lifecycle.ViewModel
 

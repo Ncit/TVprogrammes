@@ -7,21 +7,21 @@
 
     <fragment
         android:id="@+id/channelsFragment"
-        android:name="com.test.tvprogramepg.api.fragments.channels.ChannelsFragment"
+        android:name="com.test.tvprogramepg.fragments.channels.ChannelsFragment"
         android:label="channels_fragment"
         tools:layout="@layout/channels_fragment" />
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.test.tvprogramepg.api.fragments.settings.SettingsFragment"
+        android:name="com.test.tvprogramepg.fragments.settings.SettingsFragment"
         android:label="settings_fragment"
         tools:layout="@layout/settings_fragment" />
     <fragment
         android:id="@+id/companyFragment"
-        android:name="com.test.tvprogramepg.api.fragments.company.CompanyFragment"
+        android:name="com.test.tvprogramepg.fragments.company.CompanyFragment"
         android:label="company_fragment"
         tools:layout="@layout/company_fragment" />
     <fragment
         android:id="@+id/FAQFragment"
-        android:name="com.test.tvprogramepg.api.fragments.faq.FAQFragment"
+        android:name="com.test.tvprogramepg.fragments.faq.FAQFragment"
         android:label="FAQFragment" />
 </navigation>

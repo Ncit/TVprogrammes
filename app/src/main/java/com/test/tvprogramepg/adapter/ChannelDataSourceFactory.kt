@@ -1,4 +1,4 @@
-package com.test.tvprogramepg.api.adapter
+package com.test.tvprogramepg.adapter
 
 import androidx.lifecycle.MutableLiveData
 import androidx.paging.DataSource

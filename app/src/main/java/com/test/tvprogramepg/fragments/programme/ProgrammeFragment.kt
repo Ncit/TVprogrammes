@@ -1,4 +1,4 @@
-package com.test.tvprogramepg.api.fragments.programme
+package com.test.tvprogramepg.fragments.programme
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.test.tvprogramepg.R
-import com.test.tvprogramepg.api.fragments.programme.adapter.ProgrammeAdapter
+import com.test.tvprogramepg.fragments.programme.adapter.ProgrammeAdapter
 import com.test.tvprogramepg.api.models.ProgrammeModel
 import com.test.tvprogramepg.databinding.ProgrammeFragmentBinding
 

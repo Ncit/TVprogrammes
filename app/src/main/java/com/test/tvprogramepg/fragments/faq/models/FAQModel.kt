@@ -1,4 +1,4 @@
-package com.test.tvprogramepg.api.fragments.faq.models
+package com.test.tvprogramepg.fragments.faq.models
 
 data class FAQModel(
     val question: String,

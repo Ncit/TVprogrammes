@@ -1,12 +1,12 @@
-package com.test.tvprogramepg.api.fragments.channels
+package com.test.tvprogramepg.fragments.channels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.paging.LivePagedListBuilder
 import androidx.paging.PagedList
-import com.test.tvprogramepg.api.adapter.ChannelDataSourceFactory
-import com.test.tvprogramepg.api.adapter.ChannelsDataSource
+import com.test.tvprogramepg.adapter.ChannelDataSourceFactory
+import com.test.tvprogramepg.adapter.ChannelsDataSource
 import com.test.tvprogramepg.api.models.ChannelModel
 import java.util.concurrent.Executor
 import java.util.concurrent.Executors
@@ -22,9 +22,9 @@ class ChannelsViewModel : ViewModel() {
         dataSourceMutableLiveData = channelDataSourceFactory.mutableLiveData
         val config = PagedList.Config.Builder()
             .setEnablePlaceholders(false)
-            .setInitialLoadSizeHint(5)
-            .setPageSize(5)
-            .setPrefetchDistance(5)
+            .setInitialLoadSizeHint(8)
+            .setPageSize(8)
+            .setPrefetchDistance(29)
             .build()
         executor = Executors.newFixedThreadPool(5)
         pagedListLiveData =

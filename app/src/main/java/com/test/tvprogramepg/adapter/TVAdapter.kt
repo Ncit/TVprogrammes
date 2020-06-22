@@ -1,4 +1,4 @@
-package com.test.tvprogramepg.api.adapter
+package com.test.tvprogramepg.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

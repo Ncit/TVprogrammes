@@ -1,4 +1,4 @@
-package com.test.tvprogramepg.api.fragments.programme
+package com.test.tvprogramepg.fragments.programme
 
 import androidx.lifecycle.ViewModel
 
