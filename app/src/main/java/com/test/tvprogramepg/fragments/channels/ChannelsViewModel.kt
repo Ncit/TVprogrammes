@@ -22,9 +22,8 @@ class ChannelsViewModel : ViewModel() {
         dataSourceMutableLiveData = channelDataSourceFactory.mutableLiveData
         val config = PagedList.Config.Builder()
             .setEnablePlaceholders(false)
-            .setInitialLoadSizeHint(8)
             .setPageSize(8)
-            .setPrefetchDistance(29)
+            .setPrefetchDistance(24)
             .build()
         executor = Executors.newFixedThreadPool(5)
         pagedListLiveData =
